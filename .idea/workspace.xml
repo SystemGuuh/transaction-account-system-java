@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a525864d-2853-4479-ba80-c96e27cb77b4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/ActiveAccountStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/AuthorizationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/AuthorizationStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/DoubledTransactionStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/FirstTransactionThresholdStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/HighFrequencyStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/InsufficientLimitStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AuthorizationServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ActiveAccountStrategyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -21,11 +13,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Account.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/TransactionSystemTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-TransactionSystemTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/compileTransaction/stash-dir/TransactionSystemTest.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/features/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TransactionSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TransactionSystemTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/AuthorizationServiceTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +57,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.ActiveAccountStrategyTest.executor": "Run",
+    "Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsActive.executor": "Run",
+    "Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive.executor": "Run",
     "Gradle.TransactionSystemTest.testAddTransactionToAccountHistory (1).executor": "Run",
     "Gradle.TransactionSystemTest.testAddTransactionToAccountHistory.executor": "Run",
     "Gradle.TransactionSystemTest.testBelanceCalculationFromAccount.executor": "Run",
@@ -79,21 +77,8 @@
       <recent name="C:\Users\gusta\IdeaProjects\transaction-account-system-java\src\main\java\org\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TransactionSystemTest.testAddTransactionToAccountHistory">
-    <configuration name="TransactionSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.features.TransactionSystem" />
-      <module name="transaction-account-system-java.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.features.authorization.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TransactionSystemTest.testAddTransactionToAccountHistory (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive">
+    <configuration name="ActiveAccountStrategyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -106,7 +91,55 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;org.features.TransactionSystemTest.testAddTransactionToAccountHistory&quot;" />
+            <option value="&quot;ActiveAccountStrategyTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ActiveAccountStrategyTest.testAuthorizeWhenAccountIsActive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ActiveAccountStrategyTest.testAuthorizeWhenAccountIsActive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,10 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive" />
+        <item itemvalue="Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsActive" />
+        <item itemvalue="Gradle.ActiveAccountStrategyTest" />
         <item itemvalue="Gradle.TransactionSystemTest.testAddTransactionToAccountHistory" />
         <item itemvalue="Gradle.TransactionSystemTest.testBelanceCalculationFromAccount" />
-        <item itemvalue="Gradle.TransactionSystemTest.testAddTransactionToAccountHistory (1)" />
-        <item itemvalue="Application.TransactionSystem" />
       </list>
     </recent_temporary>
   </component>
