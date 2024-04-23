@@ -26,6 +26,7 @@ public class ActiveAccountStrategyTest {
 
         AuthorizationResult result = strategy.authorize(transaction, account);
 
+
         assertEquals("account-not-active", result.getViolations().get(0), "Should return 'account-not-active' violation");
     }
 }

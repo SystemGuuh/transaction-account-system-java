@@ -5,10 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a525864d-2853-4479-ba80-c96e27cb77b4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/DoubledTransactionStrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/InsufficientLimitStrategyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/ActiveAccountStrategyTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/default-package.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-ActiveAccountStrategyTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Account.class.uniqueId5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ActiveAccountStrategy.class.uniqueId8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AuthorizationResult.class.uniqueId1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/AuthorizationStrategy.class.uniqueId3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/DoubledTransactionStrategy.class.uniqueId6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/FirstTransactionThresholdStrategy.class.uniqueId2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/HighFrequencyStrategy.class.uniqueId4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/InsufficientLimitStrategy.class.uniqueId7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/Transaction.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/features/authorization/ActiveAccountStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/ActiveAccountStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/features/authorization/DoubledTransactionStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/DoubledTransactionStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/features/authorization/FirstTransactionThresholdStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/FirstTransactionThresholdStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/features/authorization/HighFrequencyStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/HighFrequencyStrategy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/features/authorization/InsufficientLimitStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/authorization/InsufficientLimitStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ActiveAccountStrategyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ActiveAccountStrategyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +75,8 @@
     "Gradle.ActiveAccountStrategyTest.executor": "Run",
     "Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsActive.executor": "Run",
     "Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive.executor": "Run",
+    "Gradle.DoubledTransactionStrategyTest.testAuthorizeWhenTimeIsDifferent.executor": "Run",
+    "Gradle.InsufficientLimitStrategyTest.testAuthorizeWhenAvaliableLimitIsBiggerThanTrasactionAmount.executor": "Run",
     "Gradle.TransactionSystemTest.testAddTransactionToAccountHistory (1).executor": "Run",
     "Gradle.TransactionSystemTest.testAddTransactionToAccountHistory.executor": "Run",
     "Gradle.TransactionSystemTest.testBelanceCalculationFromAccount.executor": "Run",
@@ -65,7 +94,7 @@
       <recent name="C:\Users\gusta\IdeaProjects\transaction-account-system-java\src\main\java\org\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive">
+  <component name="RunManager" selected="Gradle.InsufficientLimitStrategyTest.testAuthorizeWhenAvaliableLimitIsBiggerThanTrasactionAmount">
     <configuration name="ActiveAccountStrategyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -138,7 +167,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TransactionSystemTest.testAddTransactionToAccountHistory" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DoubledTransactionStrategyTest.testAuthorizeWhenTimeIsDifferent" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -151,7 +180,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TransactionSystemTest.testAddTransactionToAccountHistory&quot;" />
+            <option value="&quot;DoubledTransactionStrategyTest.testAuthorizeWhenTimeIsDifferent&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,7 +191,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TransactionSystemTest.testBelanceCalculationFromAccount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="InsufficientLimitStrategyTest.testAuthorizeWhenAvaliableLimitIsBiggerThanTrasactionAmount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -175,7 +204,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;TransactionSystemTest.testBelanceCalculationFromAccount&quot;" />
+            <option value="&quot;InsufficientLimitStrategyTest.testAuthorizeWhenAvaliableLimitIsBiggerThanTrasactionAmount&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -188,11 +217,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.InsufficientLimitStrategyTest.testAuthorizeWhenAvaliableLimitIsBiggerThanTrasactionAmount" />
+        <item itemvalue="Gradle.DoubledTransactionStrategyTest.testAuthorizeWhenTimeIsDifferent" />
         <item itemvalue="Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsNotActive" />
         <item itemvalue="Gradle.ActiveAccountStrategyTest.testAuthorizeWhenAccountIsActive" />
         <item itemvalue="Gradle.ActiveAccountStrategyTest" />
-        <item itemvalue="Gradle.TransactionSystemTest.testAddTransactionToAccountHistory" />
-        <item itemvalue="Gradle.TransactionSystemTest.testBelanceCalculationFromAccount" />
       </list>
     </recent_temporary>
   </component>
@@ -206,6 +235,17 @@
       <updated>1713543479350</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
