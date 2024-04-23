@@ -10,13 +10,14 @@ public class Account implements Runnable{
     private List<Transaction> history;
     private final Semaphore semaphore = new Semaphore(1);
 
-    public Account(boolean active, int availableLimit) {
+    public Account(boolean active, double balance, int availableLimit) {
         this.active = active;
         this.availableLimit = availableLimit;
         this.history = new ArrayList<>();
+        this.balance = balance;
     }
 
-    public synchronized void addTransaction(Transaction transaction) {
+    public void addTransaction(Transaction transaction) {
         new Thread(() -> {
             try {
                 semaphore.acquire();
@@ -58,7 +59,7 @@ public class Account implements Runnable{
 
     public double getBalance() { return balance;  }
 
-    public void setBalance(int balance) { this.balance = balance; }
+    public void setBalance(double balance) { this.balance = balance; }
 
 
     @Override

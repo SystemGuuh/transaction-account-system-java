@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a525864d-2853-4479-ba80-c96e27cb77b4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/TransactionSystem.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/features/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/features/TransactionSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/TransactionSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TransactionSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TransactionSystemTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,25 +49,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.TransactionSystemTest.testAddTransactionToAccountHistory (1).executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TransactionSystemTest.testAddTransactionToAccountHistory.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.transaction-account-system-java [:TransactionSystem.main()].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/gusta/IdeaProjects/transaction-account-system-java/src/main/java/org/example/Main.java&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.TransactionSystemTest.testAddTransactionToAccountHistory (1).executor": "Run",
+    "Gradle.TransactionSystemTest.testAddTransactionToAccountHistory.executor": "Run",
+    "Gradle.TransactionSystemTest.testBelanceCalculationFromAccount.executor": "Run",
+    "Gradle.transaction-account-system-java [:TransactionSystem.main()].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "onboarding.tips.debug.path": "C:/Users/gusta/IdeaProjects/transaction-account-system-java/src/main/java/org/example/Main.java"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\gusta\IdeaProjects\transaction-account-system-java\src\main\java\org\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TransactionSystem">
+  <component name="RunManager" selected="Gradle.TransactionSystemTest.testBelanceCalculationFromAccount">
     <configuration name="TransactionSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.features.TransactionSystem" />
       <module name="transaction-account-system-java.main" />
@@ -118,8 +130,33 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TransactionSystemTest.testBelanceCalculationFromAccount" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;TransactionSystemTest.testBelanceCalculationFromAccount&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TransactionSystemTest.testBelanceCalculationFromAccount" />
         <item itemvalue="Gradle.TransactionSystemTest.testAddTransactionToAccountHistory" />
         <item itemvalue="Gradle.TransactionSystemTest.testAddTransactionToAccountHistory (1)" />
         <item itemvalue="Application.TransactionSystem" />
