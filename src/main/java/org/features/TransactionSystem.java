@@ -4,7 +4,7 @@ import java.util.Random;
 public class TransactionSystem {
     public static void main(String[] args) {
         Account account = new Account(true, 1000);
-
+        Random random = new Random();
         Thread accountThread = new Thread(account);
         accountThread.start();
 
@@ -12,6 +12,7 @@ public class TransactionSystem {
 
         for (int i = 0; i < threads.length; i++) {
             double amount = (random.nextDouble() * 2000.0) - 1000.0;
+            amount = Math.round(amount * 100.0) / 100.0;
             Transaction transaction = new Transaction(amount, "Amazon", "2022-04-14T14:30:00");
             threads[i] = new Thread(() -> {
                 account.addTransaction(transaction);

@@ -4,8 +4,8 @@ import java.util.List;
 
 public class Account implements Runnable{
     private boolean active;
-    private int availableLimit;
-    private int balance;
+    private double availableLimit;
+    private double balance;
     private List<Transaction> history;
 
     public Account(boolean active, int availableLimit) {
@@ -28,7 +28,7 @@ public class Account implements Runnable{
         this.active = active;
     }
 
-    public int getAvailableLimit() {
+    public double getAvailableLimit() {
         return availableLimit;
     }
 
@@ -44,7 +44,7 @@ public class Account implements Runnable{
         this.history = history;
     }
 
-    public int getBalance() { return balance;  }
+    public double getBalance() { return balance;  }
 
     public void setBalance(int balance) { this.balance = balance; }
 
@@ -60,7 +60,7 @@ public class Account implements Runnable{
         return "Account{" +
                 "active=" + active +
                 ", availableLimit=" + availableLimit +
-                ", balance=" + balance +
+                ", balance=" + String.format("%.2f", (double) balance / 100) +
                 ", history=" + history +
                 '}';
     }

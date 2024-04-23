@@ -1,18 +1,18 @@
 package org.features;
 
 public class Transaction {
-    private int amount;
+    private double amount;
     private String merchant;
     private String time;
 
-    public Transaction(int amount, String merchant, String time) {
+    public Transaction(double amount, String merchant, String time) {
         this.amount = amount;
         this.merchant = merchant;
         this.time = time;
     }
 
     
-    public int getAmount() {
+    public double getAmount() {
         return amount;
     }
 
