@@ -1,11 +1,12 @@
 package org.features;
+import java.util.Date;
 
 public class Transaction {
     private double amount;
     private String merchant;
-    private String time;
+    private Long time;
 
-    public Transaction(double amount, String merchant, String time) {
+    public Transaction(double amount, String merchant, long time) {
         this.amount = amount;
         this.merchant = merchant;
         this.time = time;
@@ -28,11 +29,11 @@ public class Transaction {
         this.merchant = merchant;
     }
 
-    public String getTime() {
+    public Long getTime() {
         return time;
     }
 
-    public void setTime(String time) {
+    public void setTime(Long time) {
         this.time = time;
     }
 
