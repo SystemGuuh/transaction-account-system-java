@@ -1,12 +1,14 @@
 package org.features;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Semaphore;
 
 public class Account implements Runnable{
     private boolean active;
     private double availableLimit;
     private double balance;
     private List<Transaction> history;
+    private final Semaphore semaphore = new Semaphore(1);
 
     public Account(boolean active, int availableLimit) {
         this.active = active;
@@ -15,8 +17,18 @@ public class Account implements Runnable{
     }
 
     public synchronized void addTransaction(Transaction transaction) {
-        this.history.add(transaction);
-        this.balance += transaction.getAmount();
+        new Thread(() -> {
+            try {
+                semaphore.acquire();
+                this.history.add(transaction);
+                this.balance += transaction.getAmount();
+                System.out.println("Transaction added by thread: " + Thread.currentThread().getName());
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                semaphore.release();
+            }
+        }).start();
     }
 
     // Getters e Setters
