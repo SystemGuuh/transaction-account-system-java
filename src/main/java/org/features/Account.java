@@ -60,6 +60,7 @@ public class Account implements Runnable{
         return "Account{" +
                 "active=" + active +
                 ", availableLimit=" + availableLimit +
+                ", balance=" + balance +
                 ", history=" + history +
                 '}';
     }
