@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TransactionSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-23T04:52:42" hostname="ACER-NITRO-5" time="1.024">
+<testsuite name="TransactionSystemTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-04-23T15:17:50" hostname="ACER-NITRO-5" time="0.022">
   <properties/>
-  <testcase name="testBelanceCalculationFromAccount()" classname="TransactionSystemTest" time="1.024"/>
-  <system-out><![CDATA[Transaction added by thread: Thread-3
-Transaction added by thread: Thread-4
-Transaction added by thread: Thread-5
-Transaction added by thread: Thread-6
-Transaction added by thread: Thread-7
-]]></system-out>
+  <testcase name="testAddTransactionToAccountHistory()" classname="TransactionSystemTest" time="0.022"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

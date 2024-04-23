@@ -6,15 +6,13 @@ import java.util.concurrent.Semaphore;
 public class Account implements Runnable{
     private boolean active;
     private double availableLimit;
-    private double balance;
     private List<Transaction> history;
     private final Semaphore semaphore = new Semaphore(1);
 
-    public Account(boolean active, double balance, int availableLimit) {
+    public Account(boolean active, int availableLimit) {
         this.active = active;
         this.availableLimit = availableLimit;
         this.history = new ArrayList<>();
-        this.balance = balance;
     }
 
     public void addTransaction(Transaction transaction) {
@@ -22,7 +20,6 @@ public class Account implements Runnable{
             try {
                 semaphore.acquire();
                 this.history.add(transaction);
-                this.balance += transaction.getAmount();
                 System.out.println("Transaction added by thread: " + Thread.currentThread().getName());
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -57,14 +54,8 @@ public class Account implements Runnable{
         this.history = history;
     }
 
-    public double getBalance() { return balance;  }
-
-    public void setBalance(double balance) { this.balance = balance; }
-
-
     @Override
     public void run() {
-
         System.out.println("Processing transaction...");
     }
 
@@ -73,7 +64,6 @@ public class Account implements Runnable{
         return "Account{" +
                 "active=" + active +
                 ", availableLimit=" + availableLimit +
-                ", balance=" + String.format("%.2f", (double) balance / 100) +
                 ", history=" + history +
                 '}';
     }
