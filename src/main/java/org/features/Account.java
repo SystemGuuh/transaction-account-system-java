@@ -2,7 +2,7 @@ package org.features;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Account {
+public class Account implements Runnable{
     private boolean active;
     private int availableLimit;
     private int balance;
@@ -14,7 +14,7 @@ public class Account {
         this.history = new ArrayList<>();
     }
 
-    public void addTransaction(Transaction transaction) {
+    public synchronized void addTransaction(Transaction transaction) {
         this.history.add(transaction);
         this.balance += transaction.getAmount();
     }
@@ -47,6 +47,13 @@ public class Account {
     public int getBalance() { return balance;  }
 
     public void setBalance(int balance) { this.balance = balance; }
+
+
+    @Override
+    public void run() {
+
+        System.out.println("Processing transaction...");
+    }
 
     @Override
     public String toString() {

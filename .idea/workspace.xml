@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a525864d-2853-4479-ba80-c96e27cb77b4" name="Changes" comment="" />
+    <list default="true" id="a525864d-2853-4479-ba80-c96e27cb77b4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/features/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/features/TransactionSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/features/TransactionSystem.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +59,7 @@
       <recent name="C:\Users\gusta\IdeaProjects\transaction-account-system-java\src\main\java\org\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.TransactionSystemTest.testAddTransactionToAccountHistory">
+  <component name="RunManager" selected="Application.TransactionSystem">
     <configuration name="TransactionSystem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.features.TransactionSystem" />
       <module name="transaction-account-system-java.main" />
