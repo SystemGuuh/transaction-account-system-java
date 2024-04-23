@@ -1,4 +1,5 @@
 package org.features;
+import java.util.Random;
 
 public class TransactionSystem {
     public static void main(String[] args) {
@@ -10,7 +11,8 @@ public class TransactionSystem {
         Thread[] threads = new Thread[5];
 
         for (int i = 0; i < threads.length; i++) {
-            Transaction transaction = new Transaction(100, "Amazon", "2022-04-14T14:30:00");
+            double amount = (random.nextDouble() * 2000.0) - 1000.0;
+            Transaction transaction = new Transaction(amount, "Amazon", "2022-04-14T14:30:00");
             threads[i] = new Thread(() -> {
                 account.addTransaction(transaction);
                 System.out.println("Transaction added by thread: " + Thread.currentThread().getName());
