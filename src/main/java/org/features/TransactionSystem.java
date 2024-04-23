@@ -1,10 +1,12 @@
 package org.features;
 import java.util.Random;
+import java.util.concurrent.Semaphore;
 
 public class TransactionSystem {
     public static void main(String[] args) {
         Account account = new Account(true, 1000);
         Random random = new Random();
+        Semaphore semaphore = new Semaphore(1);
         Thread accountThread = new Thread(account);
         accountThread.start();
 
@@ -15,8 +17,15 @@ public class TransactionSystem {
             amount = Math.round(amount * 100.0) / 100.0;
             Transaction transaction = new Transaction(amount, "Amazon", "2022-04-14T14:30:00");
             threads[i] = new Thread(() -> {
-                account.addTransaction(transaction);
-                System.out.println("Transaction added by thread: " + Thread.currentThread().getName());
+                try {
+                    semaphore.acquire();
+                    account.addTransaction(transaction);
+                    System.out.println("Transaction added by thread: " + Thread.currentThread().getName());
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    semaphore.release();
+                }
             });
             threads[i].start();
         }
