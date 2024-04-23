@@ -5,6 +5,7 @@ import java.util.List;
 public class Account {
     private boolean active;
     private int availableLimit;
+    private int balance;
     private List<Transaction> history;
 
     public Account(boolean active, int availableLimit) {
@@ -37,6 +38,10 @@ public class Account {
     public void setHistory(List<Transaction> history) {
         this.history = history;
     }
+
+    public int getBalance() { return balance;  }
+
+    public void setBalance(int balance) { this.balance = balance; }
 
     @Override
     public String toString() {
