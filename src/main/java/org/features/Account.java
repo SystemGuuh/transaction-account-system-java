@@ -14,6 +14,11 @@ public class Account {
         this.history = new ArrayList<>();
     }
 
+    public void addTransaction(Transaction transaction) {
+        this.history.add(transaction);
+        this.balance += transaction.getAmount();
+    }
+
     // Getters e Setters
     public boolean isActive() {
         return active;
